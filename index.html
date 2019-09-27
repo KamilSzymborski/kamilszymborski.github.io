@@ -13,7 +13,7 @@
 	            -moz-user-select: none;
 	            -ms-user-select: none;
 	            user-select: none;
-       
+                font-family: 'Codystar', cursive;
             }
             .flip-card 
             {
@@ -51,9 +51,18 @@
             }
             .flip-card-back 
             {
+                
                 background-color: black;
                 transform: rotateY(180deg);
                 border: 1px dotted white;
+            }
+
+            .kfai:hover   {-webkit-animation: kfbgci 3s forwards;}
+            .kfai:hover #Button  {-webkit-animation: kfbci 1s forwards;}
+            .kfaw:hover   {-webkit-animation: kfbgcw 3s forwards;}
+            .kfaw:hover #Button  {-webkit-animation: kfbcw 1s forwards;}
+            .pc{
+                -webkit-animation: pulsecolor 3s infinite;
             }
             .shadow 
             {
@@ -104,20 +113,20 @@
             #PayPal
             {
                 position: absolute;
-                left: 95%;
-                top: 97%;
-                -webkit-transform: translate(-95%, -97%);
-                transform: translate(-95%, -97%);
+                left: 50%;
+                top: 95%;
+                -webkit-transform: translate(-50%, -95%);
+                transform: translate(-50%, -95%);
                 margin: 0 auto;
-                
                 text-align: center;
                 z-index: 2;
             }
             #Button
             {
+                
                 color: inherit;
 	padding: 1em 1.5em;
-    color: white;
+    
 	text-decoration: none;
 	text-transform: uppercase;
 	
@@ -125,7 +134,7 @@
 	display: inline;
 	align-items: center;
 	text-align: center;
-    border: 0.5px dotted white;
+    border: 0.5px dotted transparent;
     
             }
             #Button:hover 
@@ -136,6 +145,23 @@
             {
 	            color: rgb(255, 255, 255);
             }
+
+@keyframes kfbgci  
+{
+    100% { background-color: crimson; color:white; }
+}
+@keyframes kfbci 
+{
+    100% { border-color: white; }
+}
+@keyframes kfbgcw  
+{
+    100% { background-color: #2e8e6e; color:white; }
+}
+@keyframes kfbcw 
+{
+    100% { border-color: white; }
+}
         </style>
     </head>
 
@@ -145,8 +171,8 @@
         </div>
 
 
-        <a id="PayPal" class="soft" style="padding: 5px; background-color: deeppink; color:white; font-size: 8px; font-weight: bold; border: deeppink dotted 0.5px;" href="https://paypal.me/kamilszymborski/1eur" target="_blank">
-            send ♥ suggestion via PayPal
+        <a id="PayPal" class="soft" style="background-color: white; color:black; font-size: 9px; font-weight: bold;" href="https://github.com/KamilSzymborski" target="_blank">
+            github.com/kamilszymborski
         </a>
 
         <div id="Applications">
@@ -166,7 +192,7 @@
                             </div>
                         </div>
                         <div class="flip-card-back" style="background-color: black; width: 300px;">
-                            <div class="soft" style="color: white; margin: 20px; font-size: 12px; height: 253px; text-align: center; align-content: center; align-items: center; vertical-align: middle">
+                            <div class="soft" style="color:white; margin: 20px; font-size: 12px; height: 253px; text-align: center; align-content: center; align-items: center; vertical-align: middle">
                                 Idle Clock Locker is a program that can simulate user activity at the computer by resetting the system's idle time without unexpected mouse or keyboard clicks.
                                 <br/>
                                 <br/>
@@ -181,7 +207,7 @@
                                 <br/>
                             </div>
                             <div>
-                                <a id="Button" class="soft" style="font-size: 10px;" href="Idle Clock Locker.exe" download>Portable [1,06 MB]</a>
+                                <a id="Button" class="soft" style="border-color: white;color:white;font-size: 10px;" href="Idle Clock Locker.exe" download>Portable [1,06 MB]</a>
                             </div>
                         </div>
                     </div>
@@ -204,7 +230,7 @@
                         </div>
                         <div class="flip-card-back" style="width: 300px;">
                             <div style="width: 300px; height: 2px; float: left;"></div>
-                            <div class="soft" style=" color: white; margin: 20px; font-size: 12px; height: 253px; text-align: center; align-content: center; align-items: center; vertical-align: middle">
+                            <div class="soft" style="color: white; margin: 20px; font-size: 12px; height: 253px; text-align: center; align-content: center; align-items: center; vertical-align: middle">
                                 Window Centering Helper is a background program that will help you center windows: it can do it automatically or manually.
                                 <br/>
                                 <br/>
@@ -216,12 +242,12 @@
                                 <br/>
                                 <br/>
                                 <br/>
-                                <span class="soft" style="font-size: 10px; text-transform: uppercase">v1.0.3 <br/>Freeware<br/>Win 7/8/10; .NET 4.5</span>
+                                <span class="soft" style="font-size: 10px; text-transform: uppercase">v1.0.7 <br/>Freeware<br/>Win 7/8/10; .NET 4.5</span>
                                 <br/>
                             </div>
                             <div>
-                                <a id="Button" class="soft" style="font-size: 10px;" href="WindowCenteringHelper-SE.exe" download>Installer [1,92 MB]</a>
-                                <a id="Button" class="soft" style="font-size: 10px;" href="WindowCenteringHelper-PE.exe" download>Portable  [1,66 MB]</a>
+                                <a id="Button" class="soft" style="border-color: white;color:white;font-size: 10px;" href="WindowCenteringHelper-SE.exe" download>Installer [1,93 MB]</a>
+                                <a id="Button" class="soft" style="border-color: white;color:white;font-size: 10px;" href="WindowCenteringHelper-PE.exe" download>Portable  [1,73 MB]</a>
                             </div>
                         </div>
                     </div>
